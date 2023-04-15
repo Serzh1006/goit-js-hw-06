@@ -13,6 +13,5 @@ const newlistIngredients = ingredients.map((elem) => {
   liEl.classList.add("item");
   return liEl;
 });
-console.log(newlistIngredients);
 const listEl = document.querySelector("#ingredients");
-listEl.prepend(...newlistIngredients);
+listEl.append(...newlistIngredients);
